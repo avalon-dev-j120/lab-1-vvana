@@ -1,6 +1,7 @@
 package ru.avalon.java.j20.labs.tasks;
 
 import ru.avalon.java.j20.labs.Task;
+import ru.avalon.java.j20.labs.models.Point;
 
 /**
  * Задание №2.
@@ -32,7 +33,11 @@ public class Task2 implements Task {
          * 3. Вычислите дистанцию между точками.
          *
          * 4. С использованием отладчика проверьте корректность
-         *    работы программы.
+         *    работы программы.//
          */
+        
+        Point point1 = new Point(1,2);                                          // точка int
+        Point point2 = new Point(1.0, 2.0);
+        double dist = point1.distanceTo(point2);
     }
 }
